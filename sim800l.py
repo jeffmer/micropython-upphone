@@ -189,7 +189,7 @@ class SIM800L:
                 return result.split('"')[1]
         return ''
 
-    def has_input():
+    def has_input(self):
         return not self._uart.any() == 0   
     
              
